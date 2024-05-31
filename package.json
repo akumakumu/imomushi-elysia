@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "@elysiajs/html": "^1.0.2",
-    "@gtramontina.com/elysia-tailwind": "2.0.0",
     "@kitajs/html": "^4.1.0",
     "@kitajs/ts-html-plugin": "^4.0.1",
     "elysia": "latest"

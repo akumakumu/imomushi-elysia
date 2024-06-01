@@ -15,7 +15,7 @@ const app = new Elysia()
       <title>Youne Elysia</title>
     </head>
     <body class="bg-neutral-50">
-      <div class="container mx-auto max-w-screen-md py-12">
+      <div class="container mx-auto max-w-screen-md py-12 px-6">
         <div>
           <p class="text-3xl text-center text-gray-800 font-sans">Hi, Welcome to Youne's <span class="text-rose-600">Elysia</span></p>
         </div>

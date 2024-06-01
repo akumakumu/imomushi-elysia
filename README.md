@@ -2,4 +2,4 @@
 
 ## Stack
 
-`Bun` + `Elysia.js` + `HTMX`
+`Bun` `Elysia.js` `HTMX`

@@ -22,7 +22,7 @@ const app = new Elysia()
           <p class="text-2xl text-justify text-gray-800 font-sans my-3">Introduction <span class="text-rose-600">;</span></p>
           
           <p class="text-2xl text-justify text-gray-800 font-sans my-3">
-            Simple endpoint that i develop to learn Bun in my spare time.
+            Small API that i develop to learn Bun in my spare time.
           </p>
 
           <p class="text-2xl text-justify text-gray-800 font-sans my-3">

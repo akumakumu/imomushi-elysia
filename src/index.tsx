@@ -1,7 +1,9 @@
 import { Elysia } from "elysia";
 import { html } from '@elysiajs/html';
+import { rateLimit } from 'elysia-rate-limit'
 
 const app = new Elysia()
+  .use(rateLimit())
   .use(html())
   .get("/", () => (
     <html lang="en">

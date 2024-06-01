@@ -9,7 +9,8 @@
     "@elysiajs/html": "^1.0.2",
     "@kitajs/html": "^4.1.0",
     "@kitajs/ts-html-plugin": "^4.0.1",
-    "elysia": "latest"
+    "elysia": "latest",
+    "elysia-rate-limit": "^4.1.0"
   },
   "devDependencies": {
     "bun-types": "latest"

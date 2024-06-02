@@ -1,9 +1,11 @@
 import { Elysia } from "elysia";
 import { html } from '@elysiajs/html';
+import { staticPlugin } from '@elysiajs/static'
 import { rateLimit } from 'elysia-rate-limit'
 
 const app = new Elysia()
   .use(rateLimit())
+  .use(staticPlugin())
   .use(html())
   .get("/", () => (
     <html lang="en">
@@ -15,12 +17,18 @@ const app = new Elysia()
       <title>Youne Elysia</title>
     </head>
     <body class="bg-neutral-50">
-      <div class="container mx-auto max-w-screen-md py-12 px-6">
+      <div class="container mx-auto max-w-screen-md px-6">
+
+        <div class="mb-8 h-full w-full relative">
+          <img src="public/banner.jpg" alt="" class="object-cover"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-50"></div>
+        </div>
+
         <div>
           <p class="text-3xl text-center text-gray-800 font-sans">Hi, Welcome to Youne's <span class="text-rose-600">Elysia</span></p>
         </div>
 
-        <div class="my-10">
+        <div class="my-8">
           <p class="text-2xl text-justify text-gray-800 font-sans my-3">Introduction <span class="text-rose-600">;</span></p>
           
           <p class="text-2xl text-justify text-gray-800 font-sans my-3">
@@ -32,11 +40,11 @@ const app = new Elysia()
           </p>
         </div>
 
-        <div class="my-1">
+        <div class="my-3">
           <p class="text-3xl text-center text-gray-800 font-sans">Stack</p>
         </div>
 
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-row justify-center items-center">
           <div class="flex justify-center items-center bg-rose-200 w-44 h-10 rounded-md m-1">
             <p class="font-bold font-sans text-center text-gray-700">Bun</p>
           </div>
